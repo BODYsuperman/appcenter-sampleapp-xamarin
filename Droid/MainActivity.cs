@@ -22,11 +22,7 @@ namespace sampleAppXamarin.Droid
             base.OnActivityResult(requestCode, resultCode, data);
         }
         
-        
-        public List<string> StateAbbreviations { get; } = new();
-
-        public List<string> WeekAvailability { get; } = new();
-
-        public ObservableCollection<CarrierShipment> ActiveShipments { get; } = new();
+        public string Name { get; set; }
+        public List<string> StateAbbreviations { get;set; } = new();
     }
 }
