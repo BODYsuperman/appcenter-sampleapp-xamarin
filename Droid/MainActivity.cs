@@ -16,7 +16,20 @@ namespace sampleAppXamarin.Droid
 
             LoadApplication(new App());
             
-            public List<string> StateAbbreviations { get; } = new();
+            public class Point 
+            {
+                public int X { get; init;}
+                public int Y { get; init;}
+            }
+            
+            var p2 = new Point
+            {
+                X = 42,
+                Y = 30
+            };
+            
+            Console.writeline($"p2.X")
+            
         }
 
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
