@@ -21,8 +21,13 @@ namespace sampleAppXamarin.Droid
         {
             base.OnActivityResult(requestCode, resultCode, data);
         }
-        
-        public string Name { get; set; }
-        public List<string> StateAbbreviations { get;set; } = new();
+     
+        public record Person(string FirstName, string LastName);
+        public static void Main()
+        {
+            Person person = new("Nancy", "Davolio");
+            Console.WriteLine(person);
+            // output: Person { FirstName = Nancy, LastName = Davolio }
+        }
     }
 }
