@@ -15,6 +15,8 @@ namespace sampleAppXamarin.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
             LoadApplication(new App());
+            
+            public List<string> StateAbbreviations { get; } = new();
         }
 
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
@@ -22,11 +24,7 @@ namespace sampleAppXamarin.Droid
             base.OnActivityResult(requestCode, resultCode, data);
         }
      
-        public record Person(string FirstName, string LastName);
-       
-        Person person = new("Nancy", "Davolio");
-        Console.WriteLine(person);
-        // output: Person { FirstName = Nancy, LastName = Davolio }
+        
        
     }
 }
