@@ -23,11 +23,10 @@ namespace sampleAppXamarin.Droid
         }
      
         public record Person(string FirstName, string LastName);
-        public static void Main()
-        {
-            Person person = new("Nancy", "Davolio");
-            Console.WriteLine(person);
-            // output: Person { FirstName = Nancy, LastName = Davolio }
-        }
+       
+        Person person = new("Nancy", "Davolio");
+        Console.WriteLine(person);
+        // output: Person { FirstName = Nancy, LastName = Davolio }
+       
     }
 }
